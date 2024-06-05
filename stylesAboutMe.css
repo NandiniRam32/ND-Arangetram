@@ -1,0 +1,492 @@
+#newShape {
+    text-shadow: 200ch;
+    text-align: center;
+    background: linear-gradient(-45deg, rgba(209,94,255,1) 14%, rgba(0,219,255,1) 100%);
+    padding-top: 0.8%;
+    padding-left: 1.6%;
+    padding-bottom: 0.6%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+#newShape1 {
+    text-shadow: 200ch;
+    text-align: center;
+    background: linear-gradient(-45deg, rgba(209,94,255,1) 14%, rgba(0,219,255,1) 100%);
+    padding-top: 1.5%;
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 0%;
+    height: 0.8%;
+    padding-left: 2%;
+    padding-bottom: 1.5%;
+}
+#newShapeNext {
+    text-shadow: 200ch;
+    text-align: center;
+    padding-top: 0.8vw;
+    height: 2.4vw;
+    width: 12vw;
+    margin-left: 11.5vw;
+    background: linear-gradient(90deg, rgba(209,94,255,1) 14%, rgba(0,219,255,1) 100%);
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 3vw;
+    color: white;
+    outline: 0.2vw solid white;
+    padding-bottom: 1vw;
+}
+.hidden {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.visible {
+    opacity: 1;
+}
+#top-bar {
+    color: #c261ff;
+    background-color: black;
+    width: 116%;
+    height: 4%;
+    font-weight: bold;
+    font-size: 1.16vw;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    text-align: center;
+    align-self: center;
+}
+#paragraphAboutMe {
+    font-size: 4.5vw;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    text-align: center;
+    padding-bottom: 60%;
+}
+#paragraph3 {
+    font-size: 1.15vw;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-left: 16%;
+    color: black;
+}
+.white-rectangle {
+    background-color: #ffffff;
+    outline: 0.2vw solid black;
+    height: 98%;
+    width: 100.5%;
+}
+.white-rectangle1 {
+    background-color: #ffffff;
+    outline: 0.2vw solid black;
+    height: 9%;
+    width: 98%;
+    align-self: center;
+}
+.main-photo {
+    width: 36vw;
+    margin-top: 2.6vw;
+    margin-left: 1vw;
+    outline: 0.4vw solid white;
+}
+.right-photo {
+    width: 18vw;
+    margin-top: 10vw;
+    margin-left: 2vw;
+    outline: 0.4vw solid white;
+}
+
+/** for phones */
+@media (max-width: 800px) {
+    .navbar-custom {
+        background-color: black;
+        color: #c261ff;
+        height: 5.5vw;
+        font-size: 1.8vw;
+        font-weight: bold;
+        width: 98.75vw;
+        margin-left: 0.5vw;
+        margin-top: 0.5vw;
+    }
+    .dropdown-content-about-me, .dropdown-content-art-page, .dropdown-content-photography-page {
+        display: none;
+        position: absolute;
+        background-color: whitesmoke;
+        min-width: 8vw;
+        outline: 0.2vw solid black;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    }
+    .white-rectangle {
+        background-color: #ffffff;
+        outline: 0.2vw solid black;
+        height: 98%;
+        width: 98%;
+    }
+    .personal-image {
+        width: 91%;
+        position: relative;
+        right: 5%;
+    }
+    #paragraph1 {
+        font-size: 4.5vw;
+        font-weight: bold;
+        font-style: italic;
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+        line-height: 110%;
+        padding-top: 2vw;
+        padding-bottom: 1vw;
+    }
+    #paragraph2 {
+        font-size: 1.43vw;
+        font-style: italic;
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+        padding-bottom: 2vw;
+    }
+    .about-me-image-1 {
+        width: 20vw;
+    }
+    .about-me-bar-1 {
+        width: 40vw;
+        padding-left: 1vw;
+    }
+    .about-me-bar-2 {
+        width: 40vw;
+    }
+    .arangetram-photo {
+        width: 20vw;
+    }
+    .gallery-mode-button {
+        padding-top: 1vw;
+    }
+    .white-rectangle-gallery {
+        background-color: #ffffff;
+        outline: 0.2vw solid black;
+        height: 2.8vw;
+        width: 48vw;
+        margin-left: 1vw;
+        margin-bottom: 1vw;
+    }
+    #newShapeGallery {
+        text-shadow: 200ch;
+        text-align: center;
+        background: linear-gradient(-45deg, rgba(209,94,255,1) 14%, rgba(0,219,255,1) 100%);
+        padding-top: 0.8%;
+        height: 4.5vw;
+        width: 50vw;
+        margin-left: 23.5vw;
+    }
+    .left-photo {
+        width: 18vw;
+        margin-top: 10vw;
+        margin-left: 10.5vw;
+        outline: 0.4vw solid white;
+    }
+    #newShapePrevious {
+        text-shadow: 200ch;
+        text-align: center;
+        padding-top: 0.8vw;
+        height: 2.4vw;
+        width: 12vw;
+        font-family: Brush Script MT, Brush Script Std, cursive;
+        font-size: 3vw;
+        color: white;
+        outline: 0.2vw solid white;
+        padding-bottom: 1vw;
+        margin-left: 16vw;
+        background: linear-gradient(-90deg, rgba(209,94,255,1) 14%, rgba(0,219,255,1) 100%);
+    }
+
+    .navbarDropdownAboutMe, .navbarDropdown, .navbarDropdownArtPage, .navbarDropdownPhotographyPage {
+        color: #c261ff;
+        transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+    }
+    
+    .navbarDropdownAboutMe:hover, .navbarDropdownAboutMe:focus, .navbarDropdown:hover, .navbarDropdown:focus, 
+    .navbarDropdownArtPage:hover, .navbarDropdownArtPage:focus, .navbarDropdownPhotographyPage:hover, .navbarDropdownPhotographyPage:focus {
+        color: #52c2eb;
+        transition: all .4s ease;
+        -webkit-transition: all .4s ease;
+    }
+    
+    .dropdown-content-about-me a, .dropdown-content-art-page a, .dropdown-content-photography-page a {
+        padding-left: 1vw;
+        padding-right: 1vw;
+        text-decoration: none;
+        display: block;
+        color: #c261ff;
+        font-size: 1.4vw;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+        line-height: 5vw;
+    }
+
+    .bottomButtonLeft {
+        margin-left: 1vw;
+        margin-right: 2vw;
+        width: 80%;
+        transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+    }
+
+    .bottomButtonMiddle {
+        margin-left: 1vw;
+        margin-right: 16vw;
+        width: 80%;
+        transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+    }
+
+    .bottomButtonRight {
+        margin-left: 1vw;
+        width: 80%;
+        transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+    }
+    
+    .bottomButtonLeft:hover, .bottomButtonMiddle:hover, .bottomButtonRight:hover {
+        width: 90%;
+        transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+    }
+    .JokeGeneratorFont {
+        font-size: 2vw;
+    }
+    .JokeGeneratorImage {
+        width: 80%;
+    }
+    .bottomLinksFont {
+        font-size: 2vw;
+    }
+    .laptop-display {
+        width: 0em;
+        height: 0em;
+    }
+    .laptop-navbar {
+        width: 0em;
+        height: 0em;
+    }
+    #laptop-navbar {
+        width: 0em;
+        height: 0em;
+    }
+}
+
+
+
+
+/** for desktop */
+@media (min-width: 801px) {
+    .navbar-custom {
+        background-color: black;
+        color: #c261ff;
+        height: 3.5vw;
+        font-size: 1.2vw;
+        font-weight: bold;
+        width: 98vw;
+        margin-left: 0.5vw;
+        margin-top: 0.5vw;
+    }
+    .dropdown-content-about-me, .dropdown-content-art-page, .dropdown-content-photography-page {
+        display: none;
+        position: absolute;
+        background-color: whitesmoke;
+        min-width: 8vw;
+        outline: 0.2vw solid black;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    }
+    .white-rectangle {
+        background-color: #ffffff;
+        outline: 0.2vw solid black;
+        height: 98%;
+        width: 100.5%;
+    }
+    .personal-image {
+        width: 81.25%;
+        position: relative;
+        right: 0%;
+    }
+    #paragraph1 {
+        font-size: 4.5vw;
+        font-weight: bold;
+        font-style: italic;
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+        line-height: 110%;
+        padding-top: 1vw;
+    }
+    #paragraph2 {
+        font-size: 1.43vw;
+        font-style: italic;
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+        padding-bottom: 2vw;
+    }
+    .about-me-image-1 {
+        width: 115%;
+        padding-top: 2%;
+        padding-right: 0%;
+    }
+    .about-me-bar-1 {
+        width: 124%;
+        padding-left: 6%;
+    }
+    .about-me-bar-2 {
+        width: 158%;
+    }
+    .arangetram-photo {
+        width: 130%;
+        padding-left: 56%;
+        padding-top: 1.4%;
+    }
+    .white-rectangle-gallery {
+        background-color: #ffffff;
+        outline: 0.2vw solid black;
+        height: 2.5vw;
+        width: 48vw;
+        margin-left: 1vw;
+        margin-bottom: 1vw;
+    }
+    #newShapeGallery {
+        text-shadow: 200ch;
+        text-align: center;
+        background: linear-gradient(-45deg, rgba(209,94,255,1) 14%, rgba(0,219,255,1) 100%);
+        padding-top: 0.8%;
+        height: 4vw;
+        width: 50vw;
+        margin-left: 23.5vw;
+    }
+    .left-photo {
+        width: 18vw;
+        margin-top: 10vw;
+        margin-left: 12vw;
+        outline: 0.4vw solid white;
+    }
+    #newShapePrevious {
+        text-shadow: 200ch;
+        text-align: center;
+        padding-top: 0.8vw;
+        height: 2.4vw;
+        width: 12vw;
+        font-family: Brush Script MT, Brush Script Std, cursive;
+        font-size: 3vw;
+        color: white;
+        outline: 0.2vw solid white;
+        padding-bottom: 1vw;
+        margin-left: 17vw;
+        background: linear-gradient(-90deg, rgba(209,94,255,1) 14%, rgba(0,219,255,1) 100%);
+    }
+
+    .navbarDropdownAboutMe, .navbarDropdown, .navbarDropdownArtPage, .navbarDropdownPhotographyPage {
+        color: #c261ff;
+        transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+    }
+    
+    .navbarDropdownAboutMe:hover, .navbarDropdownAboutMe:focus, .navbarDropdown:hover, .navbarDropdown:focus, 
+    .navbarDropdownArtPage:hover, .navbarDropdownArtPage:focus, .navbarDropdownPhotographyPage:hover, .navbarDropdownPhotographyPage:focus {
+        color: #52c2eb;
+        transition: all .4s ease;
+        -webkit-transition: all .4s ease;
+    }
+    
+    .dropdown-content-about-me a, .dropdown-content-art-page a, .dropdown-content-photography-page a {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        color: #c261ff;
+        font-size: 1vw;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+    }
+
+    .bottomButtonLeft {
+        margin-left: 1vw;
+        margin-right: 2vw;
+        width: 80%;
+        transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+    }
+
+    .bottomButtonMiddle {
+        margin-left: 1vw;
+        margin-right: 16vw;
+        width: 80%;
+        transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+    }
+
+    .bottomButtonRight {
+        margin-left: 1vw;
+        width: 80%;
+        transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+    }
+    
+    .bottomButtonLeft:hover, .bottomButtonMiddle:hover, .bottomButtonRight:hover {
+        width: 90%;
+        transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+    }
+    .JokeGeneratorFont {
+        font-size: 1.25vw;
+        padding-top: 3vw;
+    }
+    .JokeGeneratorImage {
+        width: 60%;
+    }
+    .bottomLinksFont {
+        font-size: 1.3vw;
+    }
+    .mobile-display {
+        width: 0em;
+        height: 0em;
+    }
+    .mobile-navbar {
+        width: 0em;
+        height: 0em;
+    }
+    #mobile-navbar {
+        width: 0em;
+        height: 0em;
+    }
+}
+
+.dropdown-content-about-me a:hover, .dropdown-content-art-page a:hover, .dropdown-content-photography-page a:hover {
+    background-color: #93eef5;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+
+.show {
+    display:block;
+}
+
+.stickyMainNavbar {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    opacity: 1;
+    transition: all 1000s ease;
+    -webkit-transition: all 1000s ease;
+}
+
+.stickyNavbarSubsection {
+    position: relative;
+    align-items: center;
+    width: 100%;
+    padding-top: 3.5vw;
+}
+
+.stickyNavbarSubsectionGone {
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+
+.line {
+    border-bottom: 1px solid black;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+}

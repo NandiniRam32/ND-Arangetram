@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Portfolio website for Nandini Ramakrishnan">
+        <meta name="author" content="Nandini Ramakrishnan">
+        <link rel="icon" type="images/png" href="ND.png"/>
+        <meta name="keywords" content="HTML, portfolio, Computer Science, resume, Nandini Ramakrishnan">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nandini Ramakrishnan</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="stylesAboutMe.css">
+        <style>
+            .hover-white {
+                color: #910bd4;
+                color: black;
+                padding-top: 1vw;
+                text-decoration: none;
+                margin-left: 0vw;
+            }
+            .hover-white:hover {
+                color: #4fc4ff;
+            }
+            header.top-header {
+                background-color: #910bd4;
+                color: white;
+                text-align: center;
+                padding: 1px 0;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                z-index: 1000;
+                transition: top 0.3s;
+                font-size: 2vw;
+                height: 32px;
+            }
+            nav.navbar-custom {
+                margin-top: 32px;
+            }
+            body {
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <script>
+            let lastScrollTop = 0;
+            window.addEventListener("scroll", function() {
+                let header = document.querySelector("header.top-header");
+                let navBar = document.querySelector("nav.navbar-custom");
+                let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                if (scrollTop > lastScrollTop) {
+                    header.style.top = "-50px";
+                    navBar.style.marginTop = "0";
+                } else {
+                    header.style.top = "0";
+                    navBar.style.marginTop = "32px";
+                }
+                lastScrollTop = scrollTop;
+            });
+        </script>
+        <script>
+            window.addEventListener("scroll", function() {
+                let mainImage = document.getElementById("mainImage");
+                let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                if (scrollTop > 1) {
+                    mainImage.classList.remove("visible");
+                } else {
+                    mainImage.classList.add("visible");
+                }
+            });
+        </script>        
+
+        
+        <header class="top-header" style="display: grid; grid-template-columns: 1fr 1fr; column-gap: 2vw; font-size: 1.02vw; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; text-align: right;">
+            <img src="YT.png" style="width: 2vw; margin-left: 4vw; align-items: left;"></img>
+            <span style="margin-right: 4vw; padding: 5px;">Nandini and Divya Ramakrishnan's Vocal/Violin Arangetram</span>
+        </header>
+        <header class="top-header" style="display: flex; align-items: center; font-size: 1.02vw; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+            <span style="margin-left: 4vw; padding: 5px;">Nandini and Divya Ramakrishnan's Vocal/Violin Arangetram</span>
+            <a href="https://www.youtube.com"><img src="YT.png" style="width: 2vw; margin-left: 2vw;"></img></a>
+        </header>
+        
+
+      
+
+        <header>
+            <nav id="navbar" class="navbar navbar-expand-lg navbar-custom" style="height: 10vh">
+                <div style="display: grid; grid-template-columns: 6fr 1fr 1fr 1fr 1fr 1fr; column-gap: 2vw; padding: 1vw; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                    <a style="color: white; font-weight: 200; padding: 1vw; padding-left: 2vw; font-size: 1.8vw;" href="index.html"><img src="ND.png" style="width: 4.8vw"/><img src="DivyaNandini.png" style="width: 8vw; padding: 0.18vw;"/></a>
+                    <a class="navbarDropdown" style="text-align: left; font-size: 2vw; padding: 1vw; text-decoration: none; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; padding-top: 1.6vw;" 
+                    href="index.html">Home</a>
+                    <a class="navbarDropdown" style="text-align: left; font-size: 2vw; padding: 1vw; text-decoration: none; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; padding-top: 1.6vw;" 
+                    href="AboutUsPage.html">AboutUs</a>
+                    <a class="navbarDropdown" style="text-align: left; font-size: 2vw; padding: 1vw; text-decoration: none; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; padding-top: 1.6vw;" 
+                    href="ArangetramPage.html">Arangetram</a>
+                    <a class="navbarDropdown" style="text-align: left; font-size: 2vw; padding: 1vw; text-decoration: none; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; padding-top: 1.6vw;" 
+                    href="GurusPage.html">Gurus</a>
+                    <a class="navbarDropdown" style="text-align: left; font-size: 2vw; padding: 1vw; text-decoration: none; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; padding-top: 1.6vw;" 
+                    href="GalleryPage.html">Gallery</a>
+                </div>
+            </nav>
+        </header>
+
+
+
+
+        
+        <main>
+            <article>
+                <div id="newShape" style="display: grid; column-gap: 0%; background-image: url('ArangetramBgImg1.png'); background-size: cover; background-repeat: no-repeat; width: auto; height: 100vw;">
+                    <div style="text-align: left; padding-left: 0; margin-left: 0;">
+                    </div>
+                    <span style="margin-top: 60vw;">
+                        <div class="">
+                        </div>
+                    </span>
+                </div>
+                <div id="newShape" style="display: grid; column-gap: 0%; background-image: url('ArangetramBgImgDown1.png'); background-size: cover; background-repeat: no-repeat; width: auto; height: 70vw;">
+                    <div style="text-align: left; padding-left: 0; margin-left: 0;">
+                    </div>
+                </div>
+                <div id="newShape" style="display: grid; column-gap: 0%; background-image: url('ArangetramBgImg2.png'); background-size: cover; background-repeat: no-repeat; width: auto; height: 100vw;">
+                    <div style="text-align: left; padding-left: 0; margin-left: 0;">
+                    </div>
+                    <span style="margin-top: 60vw;">
+                        <div class="">
+                        </div>
+                    </span>
+                </div>
+                <div id="newShape" style="display: grid; column-gap: 0%; background-image: url('ArangetramBgImgDown2.png'); background-size: cover; background-repeat: no-repeat; width: auto; height: 70vw;">
+                    <div style="text-align: left; padding-left: 0; margin-left: 0;">
+                    </div>
+                    <div style="height: 42vw; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight: bolder; font-size: 1.3vw;">
+                        <div style="display: grid; margin-left: 12vw; grid-template-columns: 1fr 1fr 1fr 1fr; margin-top: 22vw;">
+                            <a style="font-size: 2vw;"></a>
+                            <a href="https://www.google.com/maps/place/Mesa+Arts+Center/@33.4140503,-111.831499,17z/data=!4m6!3m5!1s0x872ba7dd2454daa3:0x1f45ea45d32907e8!8m2!3d33.4139583!4d-111.83045!16zL20vMGNnZ3Ix?entry=ttu" 
+                            target="_blank" class="hover-white" style="margin-top: 2.2vw; font-size: 1.6vw;">Address: <br/>1 East Main Street, Mesa, AZ 85201</a>
+                            <a href="https://www.google.com/maps/place/Mesa+Arts+Center/@33.4140503,-111.831499,17z/data=!4m6!3m5!1s0x872ba7dd2454daa3:0x1f45ea45d32907e8!8m2!3d33.4139583!4d-111.83045!16zL20vMGNnZ3Ix?entry=ttu" 
+                            target="_blank"><img class="bottomButtonMiddle" style="width: 20vw; height: auto; border: 0.2vw solid black;" src="MesaArtsCenterMap.png" alt="Sorry, Image Not Found"></a>
+                        <script src="navbar.js"></script></div>
+                    </div>
+                    <span style="margin-top: 0vw;">
+                        <div class="">
+                                <br/>
+                                <div style="display: grid; padding-left: 3vw; grid-template-columns: 1fr 1fr 1fr 1fr;">
+                                    <a href="AboutUsPage.html"><img class="bottomButtonLeft" src="AboutUsButton.png" alt="Sorry, Image Not Found"></a>
+                                    <a href="ArangetramPage.html"><img class="bottomButtonMiddle" src="ArangetramButton.png" alt="Sorry, Image Not Found"></a>
+                                    <a href="GurusPage.html"><img class="bottomButtonMiddle" src="GurusButton.png" alt="Sorry, Image Not Found"></a>
+                                    <a href="GalleryPage.html"><img class="bottomButtonRight" src="GalleryButton.png" alt="Sorry, Image Not Found"></a></div>
+                                <script src="navbar.js"></script>
+                        </div>
+                    </span>
+                </div>
+            </article>
+        </main>
+        <footer></footer>
+        <br/>
+    </body>
+</html>
